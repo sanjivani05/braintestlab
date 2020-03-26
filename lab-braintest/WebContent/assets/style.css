@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+*{margin:0;padding:0;}
+
+
+.leftbrain{
+	display:flex;
+	background:url('leftbrain.svg');
+	/* background-size: 100%; */
+	/* Center and scale the image nicely */
+	/* background-position: center; */
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.rightbrain{
+	display:flex;
+	background:url('rightbrain.svg');
+	background-size: 100%;
+	/* Center and scale the image nicely */
+	/* background-position: center; */
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.wellbalanced{
+	display:flex;
+	background:url('wellbalanced.svg');
+	background-size: 100%;
+	/* Center and scale the image nicely */
+	/* background-position: center; */
+	background-repeat: no-repeat;
+	/* background-size: cover; */
+}
+.logo{
+	
+	position: absolute;
+	margin:0 auto;
+	width: 314px;
+	height: 314px;
+/*	left: 563px;
+	top: 237px;*/
+	top: 50%;
+  	left: 50%;
+  /* bring your own prefixes */
+  	transform: translate(-50%, -50%);
+	}
+
+.header{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background: url('Background for home page.svg') ;
+	color: var(--main-text-color);
+	height: 635px;
+	left: 0px;
+	top: 0px; 
+	background-size: cover;
+	}
+	
+
+.header-text{
+	position: absolute;
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 44px;
+	line-height: 51px;
+	/* identical to box height */
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	align-items: center;
+	padding:73px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+
+}
+.header-text-small{
+	position: absolute;
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	/* identical to box height */
+	display: flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items: center;
+	color: #FFFFFF;
+	padding:152px;
+	}
+.footer
+{
+	display: flex;
+	flex-direction: row;
+	background: url('Footer.svg');
+	position: absolute;
+	width: 100%;
+	height: 346px;
+	left: 0px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+main{
+	padding:50px;
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	/* identical to box height */
+	display: flex;
+	flex-flow:row wrap;
+	justify-content:center;
+	align-items: center;
+	text-align: center;
+	color: #000000;
+	}
+
+
+.quiz-container {
+ /*  	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+ // 	text-shadow: 1px 1px white;
+ //	padding: 3rem;
+ / 	text-shadow: 0 1px #576071;
+  	width: 80%;
+ /* 	margin: 5rem auto;*/
+  	display: flex;
+  	flex-direction: column;
+    text-align: center;
+    font-family: Ubuntu;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 35px;
+	box-sizing: border-box;
+  /*  border: 2px solid #0099FF;*/
+    border-radius: 1rem;
+}
+
+/* for js*/
+
+.question {
+  margin: 2rem 0;
+font-family: Ubuntu;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+    justify-content: center;
+
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+}
+.option {
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	  padding: 1rem;
+  	color: #576071;
+  	background: rgba(255, 255, 255, 0.1);
+   	border-radius: 5px;
+  	transition: all 0.3s;
+
+}
+.option:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.option input:checked .option {
+  background: #08038c;
+  color: #000;
+}
+.controls{
+	padding:2rem;
+}
+.controls > * {
+  margin: 1rem;
+
+}
+button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  font-weight: 300;
+  color: white;
+  outline: none;
+  transform: scale(0.98);
+  transition: all 0.2s;
+  font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 33px;
+/* identical to box height */
+
+
+}
+button.previous {
+  background: #000000;
+}
+button.next {
+  background: #000000;
+}
+button.restart {
+  background: #0cf574;
+  color: #00000050;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  transition: all 0.4s;
+}
+button.restart:hover {
+  color: #00000098;
+}
+button:hover,
+button:focus {
+  transform: scale(1);
+  font-weight: 500;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+
+/*new radio button */
+.card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	flex-direction:row;
+	margin: auto;
+	-webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 16, 0.19), 0 0.3rem 0.3rem rgba(0, 0, 16, 0.23);
+
+}
+
+.rating-container {
+
+	display: flex;
+	    flex-direction: row;
+
+	justify-content: space-between;
+	padding: 0.4rem 0.8rem;
+	width: 100%;
+}
+
+.rating-text p {
+	color: rgba(0, 0, 16, 0.8);
+	font-size: 1.3rem;
+	padding: 0.3rem;
+}
+
+.rating {
+	display:flex;
+	background-color: rgba(0, 0, 16, 0.8);
+	padding: 0.4rem 0.4rem 0.1rem 0.4rem;
+	border-radius: 2.2rem;
+}
+
+svg {
+	fill: rgb(242, 242, 242);
+	height: 3.6rem;
+	width: 3.6rem;
+	margin: 0.2rem;
+}
+
+.rating-form-2 svg {
+	height: 3rem;
+	width: 3rem;
+	margin: 0.5rem;
+}
+
+#radios label {
+	position: relative;
+}
+
+input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+}
+
+input[type="radio"] + svg {
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+input + svg {
+	cursor: pointer;
+}
+
+input[class="super-happy"]:hover + svg,
+input[class="super-happy"]:checked + svg,
+input[class="super-happy"]:focus + svg {
+	fill: rgb(0, 109, 217);
+}
+
+input[class="happy"]:hover + svg,
+input[class="happy"]:checked + svg,
+input[class="happy"]:focus + svg {
+	fill: rgb(0, 204, 79);
+}
+
+input[class="neutral"]:hover + svg,
+input[class="neutral"]:checked + svg,
+input[class="neutral"]:focus + svg {
+	fill: rgb(232, 214, 0);
+}
+
+input[class="sad"]:hover + svg,
+input[class="sad"]:checked + svg,
+input[class="sad"]:focus + svg {
+	fill: rgb(229, 132, 0);
+}
+
+input[class="super-sad"]:hover + svg,
+input[class="super-sad"]:checked + svg,
+input[class="super-sad"]:focus + svg {
+	fill: rgb(239, 42, 16);
+}
+
+/*rightBrainView */
+
+.output-header-text{
+	display:flex;
+	position: absolute;
+	width: 610px;
+	height: 120px;
+	left: 74px;
+	top: 65px;
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 44px;
+	line-height: 60px;
+/* or 136% */
+
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+}
+.outputlogo{
+	display: flex;
+	flex-direction: row;
+	
+	color: var(--main-text-color);
+  	width:100%;
+}
+
+.output{
+	display:flex;
+	flex-direction:row;
+}
+.output-text{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	position: absolute;
+	width: 807px;
+	height: 315px;
+	left: 62px;
+	top: 362.98px;
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21px;
+	align-items: center;
+
+	color: #000000;
+}
+.filler-div{
+	flex:1;
+	
+}
+.output-brain{
+	display:flex;
+	flex-direction:row;
+	position: absolute;
+width: 362.03px;
+height: 395.99px;
+left: 973px;
+top: 303px;
+	
+}
+
+/*dynamically displaying form fields*/
+.result {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+  min-height: 100vh;
+}
+.final-score {
+  color: #00000099;
+}
+.summary {
+  font-size: 1rem;
+  text-shadow: 1px 1px #ffffff50;
+  color: #00000099;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+.summary h1 {
+  align-self: center;
+}
+button.restart {
+  background: #0cf574;
+  color: #00000050;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  transition: all 0.4s;
+}
+button.restart:hover {
+  color: #00000098;
+}
+
+.footer-text{
+	   display:flex;
+    flex-direction: row;
+    align-content: flex-end;
+	position: absolute;
+	    margin: 275px 0px 0px 80px;
+	
+	font-size: 18px;
+	font-family: Ubuntu;
+	font-style: normal;
+	z-index:9;
+}
